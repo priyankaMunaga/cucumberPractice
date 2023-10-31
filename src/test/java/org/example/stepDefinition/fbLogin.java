@@ -16,7 +16,7 @@ public class fbLogin {
     public void userEnterValidatingText(){
         $(By.xpath("//textarea[@class='gLFyf']")).setValue("https://facebook.com");
 
-sleep(5000);
+
 }
 
 }
