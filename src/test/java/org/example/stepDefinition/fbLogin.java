@@ -14,9 +14,12 @@ public class fbLogin {
     }
 @When("user enter validating text")
     public void userEnterValidatingText(){
-        $(By.xpath("//textarea[@class='gLFyf']")).setValue("https://facebook.com");
+        $(By.xpath("//textarea[@class='gLFyf']")).sendKeys("facebook.com",Keys.ENTER);
+        $(By.xpath("//h3[contains(., 'LC20lb MBeuO DKV0Md')]")).click();
+
 
 sleep(6000);
+
 }
 
 }

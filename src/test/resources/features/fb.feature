@@ -5,4 +5,4 @@ Feature:login feature for facebook
     Given user is on fb page
     When user enter validating text
 #And click on login button
-#then user should be navigated to home page
+#Then user should be enters valid name and password
