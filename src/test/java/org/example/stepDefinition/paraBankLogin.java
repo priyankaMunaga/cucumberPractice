@@ -1,5 +1,6 @@
 package org.example.stepDefinition;
 
+import com.codeborne.selenide.Condition;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
@@ -21,7 +22,7 @@ public class paraBankLogin {
         $(By.xpath("//input[@name='username']")).sendKeys("priyankamunaga");
        $(By.xpath("//input[@name='password']")).sendKeys("14567", Keys.ENTER);
        // $(By.xpath("//input[@name='password']")).sendKeys("14567", Keys.ENTER);
-        //$(By.xpath("//p[@class='error']"))
+        $(By.xpath("//p[@class='error']")).should(Condition.exist);
     }
 }
 
