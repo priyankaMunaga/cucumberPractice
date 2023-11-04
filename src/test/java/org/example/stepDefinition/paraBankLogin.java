@@ -43,7 +43,7 @@ public class paraBankLogin {
         $(By.xpath("//input[@id='customer.address.zipCode']")).setValue("522123");
         $(By.xpath("//input[@id='customer.phoneNumber']")).setValue("0987654321");
         $(By.xpath("//input[@id='customer.ssn']")).setValue("456");
-        $(By.xpath("//input[@id='customer.username']")).setValue("priyank");
+        $(By.xpath("//input[@id='customer.username']")).setValue("priyanka");
         $(By.xpath("//input[@id='customer.password']")).setValue("143468");
         $(By.xpath("//input[@id='repeatedPassword']")).setValue("143468");
         $(By.xpath("//input[@value='Register']")).click();
@@ -60,20 +60,30 @@ public class paraBankLogin {
 
     @Given("user is on new account page")
     public void userIsOnNewAccountPage() {
-        $(By.xpath("//input[@name='username']")).setValue("priyank");
+        $(By.xpath("//input[@name='username']")).setValue("priyanka");
         $(By.xpath("//input[@name='password']")).setValue("143468");
         $(By.xpath("//input[@value='Log In']")).click();
         $(By.xpath("//a[contains(text(),'Open New Account')]")).click();
-        sleep(7000);
+       // sleep(2000);
     }
 
     @Then("user will get the account details")
     public void userWillGetTheAccountDetails() {
         $(By.id("type")).selectOption("SAVINGS");
+        sleep(2000);
+        $(By.id("fromAccountId")).selectOption(0);
 
-
-sleep(7000);
-
+sleep(2000);
+$(By.xpath("//input[@value='Open New Account']")).click();
+$(By.xpath("//h1[@class='title']")).should(Condition.exist);
+sleep(5000);
+back();
+sleep(3000);
+forward();
+sleep(3000);
+refresh();
+sleep(2000);
+closeWindow();
     }
 }
 

@@ -24,4 +24,8 @@ public class gmailLogin {
 
 
     }
+
+    @Given("navigating to home page")
+    public void navigatingToHomePage() {open("https://google.com");
+    }
 }
