@@ -7,7 +7,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selenide.*;
 
 public class CalendarStep {
@@ -24,13 +23,16 @@ public class CalendarStep {
 
     @When("select specif dates on the calendar")
     public void selectSpecifDatesOnTheCalendar() {
-        $x("//div[@data-testid='undefined-month-November-2023']//div[@data-testid='undefined-calendar-day-17']").click();
+        $x("//div[@data-testid='undefined-month-November-2023']//div[@data-testid='undefined-calendar-day-23']").click();
         //div[@data-testid='undefined-calendar-day-17']
         //div[@data-testid='undefined-month-November-2023']
+      //  $(By.xpath(data-testid="undefined-calendar-day-23'"))
     }
 
     @Then("the date should select")
     public void theDateShouldSelect() {
-        $x("//div[contains(text(),'Fri, 17 Nov 2023')]").shouldBe(Condition.visible);
+        $x("//div[contains(text(),'Thu, 23 Nov 2023')]").shouldBe(Condition.visible);
+
     }
 }
+
