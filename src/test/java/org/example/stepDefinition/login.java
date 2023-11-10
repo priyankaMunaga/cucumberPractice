@@ -32,8 +32,6 @@ public class login extends Page{
 
     @Then("user should enter validating text")
     public void userShouldEnterValidatingText() {
-//        sendKeysElementBy(Locator.xpath,"//textarea[@id='APjFqb']","vishnukode");
-//        clickElementBy(Locator.name,"btnK");
         $(By.xpath("//textarea[@id='APjFqb']")).setValue("vishnukode");
         $(By.xpath("//textarea[@id='APjFqb']")).setValue("priyanka kode");
 

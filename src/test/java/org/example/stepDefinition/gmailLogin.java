@@ -16,12 +16,6 @@ public class gmailLogin {
        $(By.xpath("//a[contains(text(),'Gmail')]")).click();
         $(By.xpath("//a[contains(.,'Sign in')]")).click();
         $(By.xpath("//*[@id='identifierId']")).setValue("priyamunaga468@gmail.com");
-        //sleep(5000);
-        //$(By.xpath("//span[contains(.,'Next')]")).click();
-       // sleep(5000);
-       // $(By.xpath("//input[@type='password']")).setValue("KillSheep");
-       // $(By.xpath("//span[contains(.,'Next')]")).click();
-
 
     }
 

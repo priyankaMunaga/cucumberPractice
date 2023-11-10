@@ -20,11 +20,7 @@ public class fbLogin {
         $(By.xpath("//input[@id='email']")).sendKeys("priyamunaga468@gmail.com");
         $(By.xpath("//input[@id='pass']")).sendKeys("Mokthika@143",Keys.ENTER);
         $(By.xpath("//span[contains(text(),'Priyanka Munaga')]")).should(Condition.exist);
-        sleep(7000);
 
-
-
-sleep(6000);
 
 }
 
