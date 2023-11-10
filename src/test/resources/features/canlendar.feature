@@ -7,3 +7,9 @@ Feature: validating the calendar
       Given Selecting the Calendar
       When select specif dates on the calendar
       Then the date should select
+
+      Scenario: validating the calendar arrows
+        Given Selecting the Calendar
+        When user should select the future moth using the arrow
+        And user should select the before month arrow
+        Then select the date on the calendar
