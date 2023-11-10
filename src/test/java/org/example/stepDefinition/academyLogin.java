@@ -11,7 +11,6 @@ public class academyLogin{
   @Given("use will open the login page")
     public void useWillOpenTheLoginPage(){
     open("https://rahulshettyacademy.com/practice-project");
-    sleep(2000);
     $(By.xpath("//input[@id='name']")).setValue("vishnukode");
     $(By.xpath("//input[@id='email']")).setValue("vishnukodelogin@gmail.com");
     $(By.xpath("//button[@id='form-submit']")).click();
