@@ -12,4 +12,8 @@ Feature: validating the calendar
         Given Selecting the Calendar
         When user should select the future moth using the arrow
         And user should select the before month arrow
-        Then select the date on the calendar
+#        Then select the date on the calendar
+
+  Scenario: validating the departure place
+    Given user will select the departure
+    Then the user will click the place

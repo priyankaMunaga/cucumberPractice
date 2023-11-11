@@ -18,7 +18,7 @@ public class CalendarStep {
 
     @Given("Selecting the Calendar")
     public void selectingTheCalendar() {
-        SelenideElement element= $(By.xpath("//div[@data-testid='departure-date-dropdown-label-test-id']"));
+        SelenideElement element = $(By.xpath("//div[@data-testid='departure-date-dropdown-label-test-id']"));
         element.click();
     }
 
@@ -50,10 +50,19 @@ public class CalendarStep {
         sleep(5000);
 
         $x("//div[@data-testid='undefined-month-November-2023']").should(Condition.visible);
+        sleep(2000);
+        $(By.xpath("//div[@data-testid='Adult-testID-plus-one-cta']")).selectOption(0);
+        sleep(2000);
     }
 
-    @Then("select the date on the calendar")
-    public void selectTheDateOnTheCalendar() {
+    @Given("user will select the departure")
+    public void userWillSelectTheDeparture() {
+        sleep(2000);
+        $(By.xpath("//div[normalize-space()='Rajiv Gandhi International Airport']")).click();
     }
 }
 
+//    @Then("the user will click the place")
+//    public void theUserWillClickThePlace() {
+//    }
+//}
