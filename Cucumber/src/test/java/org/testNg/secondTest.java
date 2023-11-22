@@ -26,7 +26,6 @@ Thread.sleep(2000);
 Thread.sleep(2000);
 driver.findElement(By.xpath("//input[@value='Alert']")).click();
         Alert alert = driver.switchTo().alert();
-        Thread.sleep(2000);
         alert.accept();
         driver.close();
 
