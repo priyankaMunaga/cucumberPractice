@@ -12,9 +12,9 @@ public class firstTest {
 
     @Test
     public void actions() {
-//        WebDriver driver= new ChromeDriver();
-//        driver.get("https://google.com");
-        open("https://google.com");
+       WebDriver driver= new ChromeDriver();
+        driver.get("https://google.com");
+  //      open("https://google.com");
 
 
 }

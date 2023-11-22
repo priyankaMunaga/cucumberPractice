@@ -13,7 +13,7 @@
     <modules>
         <module>PageObject</module>
       <module>Cucumber</module>
-        <module>SeleniumPractice</module>
+
     </modules>
 
     <properties>
