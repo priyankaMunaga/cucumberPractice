@@ -59,6 +59,6 @@ public class SecondAssignmentSteps {
 
     @Then("Verify that the account is created successfully")
     public void verifyThatTheAccountIsCreatedSuccessfully() {
-        System.out.println("create sucessfully");
+
     }
 }
