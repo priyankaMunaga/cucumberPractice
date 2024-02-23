@@ -12,26 +12,28 @@ import java.util.List;
 
 public class ThirdAssignment {
 
-static String flipCartUrl= ConfigManager.getProperty("flipCartUri");
+    static String flipCartUrl = ConfigManager.getProperty("flipCartUri");
 
 
     @Before
-    public void testSetUp(){
+    public void testSetUp() {
         Page.SetUp("chrome");
     }
-    @Test
-    public void validateTheLinksOnFlipCart(){
-        Page.driver.get(flipCartUrl);
-      List<WebElement> webLinks= Page.driver.findElements(By.tagName("a"));
-      for (WebElement link:webLinks){
-          System.out.println(link.getSize());
-          System.out.println(link.getText() + " - " + link.getAttribute("href"));
 
-      }
+    @Test
+    public void validateTheLinksOnFlipCart() {
+        Page.driver.get(flipCartUrl);
+        List<WebElement> webLinks = Page.driver.findElements(By.tagName("a"));
+        for (WebElement link : webLinks) {
+            System.out.println(link.getSize());
+            System.out.println(link.getText() + " - " + link.getAttribute("href"));
+
+        }
 
     }
+
     @After
-    public void tearDown(){
+    public void tearDown() {
         Page.closeDriver();
     }
 }
