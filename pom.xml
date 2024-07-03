@@ -14,6 +14,7 @@
         <module>PageObject</module>
       <module>Cucumber</module>
         <module>Assignment</module>
+        <module>TestNgPractise</module>
 
     </modules>
 
